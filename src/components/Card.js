@@ -17,9 +17,13 @@ class card extends Component {
   };
 
   downCounter = () => {
-    this.setState((prevState) => ({
-      counter: prevState.counter - 1,
-    }));
+
+    if (this.state.counter >=1) {
+      
+      this.setState((prevState) => ({
+        counter: prevState.counter - 1,
+      }));
+    }
   };
   // _______________________________________________________
 
