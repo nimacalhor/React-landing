@@ -17,15 +17,19 @@ class card extends Component {
   };
 
   downCounter = () => {
-
-    if (this.state.counter >=1) {
-      
+    if (this.state.counter >= 1) {
       this.setState((prevState) => ({
         counter: prevState.counter - 1,
       }));
     }
   };
-  // _______________________________________________________
+
+  counterState = () =>
+    this.state.counter === 0 ? "badge bg-secondary" : "badge bg-info";
+  downActive = () =>
+    this.state.counter === 0 ? "text-secondary" : "text-danger";
+
+  // __________________________________________________________________________________________________
 
   flexButton = "d-flex justify-content-between align-content-center";
 
@@ -48,13 +52,22 @@ class card extends Component {
           <h4 className={st.card_title}>{title}</h4>
 
           <div className={(st.card_text_small, this.flexButton)}>
-            <p className={st.card_price}>{price}</p>
+            <p className={st.card_price}>
+              {price}${" "}
+              {(counter != 0) && (
+                <span className="text-muted">
+                  {`* ${counter} = `}
+                  {<span className="h6">{counter * price}</span>}
+                </span>
+              )}
+            </p>
+
             <div>
               <i
                 onClick={this.downCounter}
-                className="bi bi-arrow-down-circle-fill m-1 text-danger"
+                className={`bi bi-arrow-down-circle-fill m-1 ${this.downActive()}`}
               ></i>
-              <span className="badge bg-info text-light">{counter}</span>
+              <span className={this.counterState()}>{counter}</span>
               <i
                 onClick={this.upCounter}
                 className="bi bi-arrow-up-circle-fill m-1 text-success"

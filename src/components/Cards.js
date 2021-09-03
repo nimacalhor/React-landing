@@ -16,10 +16,10 @@ class Cards extends Component {
     render() {
         return (
             <div className={st.cards_container}>
-                <Card image={FrstImg} title="Livan messi" price="450$" /> 
-                <Card image={SecondImg} title="WHole lotta love" price="980$" /> 
-                <Card image={ThirdImg} title="ThinkPad" price="43$" /> 
-                <Card image={FifhImg} title="paranoid" price="1800$" /> 
+                <Card image={FrstImg} title="Livan messi" price="450" /> 
+                <Card image={SecondImg} title="WHole lotta love" price="980" /> 
+                <Card image={ThirdImg} title="ThinkPad" price="43" /> 
+                <Card image={FifhImg} title="paranoid" price="1800" /> 
             </div>
         );
     }
