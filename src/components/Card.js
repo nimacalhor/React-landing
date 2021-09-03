@@ -31,7 +31,7 @@ class card extends Component {
 
   // __________________________________________________________________________________________________
 
-  flexButton = "d-flex justify-content-between align-content-center";
+  flexButton = "d-flex flex-wrap justify-content-between align-content-center";
 
   render() {
     const { image, title, price } = this.props;
@@ -49,15 +49,15 @@ class card extends Component {
 
         {/* _____Text ________________________________________________*/}
         <div className={(st.card_textarea, "p-2 pt-0 border")}>
-          <h4 className={st.card_title}>{title}</h4>
+          <h5 className={st.card_title}>{title}</h5>
 
           <div className={(st.card_text_small, this.flexButton)}>
             <p className={st.card_price}>
-              {price}${" "}
+              {price}$
               {(counter != 0) && (
                 <span className="text-muted">
                   {`* ${counter} = `}
-                  {<span className="h6">{counter * price}</span>}
+                  {<span className="h6">{counter * price}$</span>}
                 </span>
               )}
             </p>
