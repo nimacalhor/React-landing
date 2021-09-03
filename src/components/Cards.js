@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { v4 } from "uuid";
+
 import st from "./Cards.module.css";
 import Card from "./Card";
 
@@ -47,7 +49,7 @@ class Cards extends Component {
     return (
       <div className={st.cards_container}>
         {products.map((item) => (
-          <Card image={item.image} title={item.title} price={item.price} />
+          <Card key={v4()} image={item.image} title={item.title} price={item.price} />
         ))}
       </div>
     );
