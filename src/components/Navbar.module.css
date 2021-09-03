@@ -1,0 +1,38 @@
+/*================== Header ==================*/
+
+.header {
+  padding: 0 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #45315d;
+}
+
+/* LIST ____________________*/
+ul.link_lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+ul.link_lists > li {
+  margin: 0.2rem 0.5rem;
+  color: #f2f4fb;
+  border-bottom: solid 2px #45315d;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+ul.link_lists > li:hover {
+  /* color: #FF9280; */
+  border-bottom: solid 2px #ff9280;
+}
+
+/* LOGO ____________________*/
+.header > div.logo > img {
+  max-width: 100%;
+  width: 65px;
+  border-radius: 0.25rem;
+  box-shadow: 5px 5px 19px #2e203d, -5px -5px 19px #5c427d;
+}

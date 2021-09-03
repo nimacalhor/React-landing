@@ -1,0 +1,70 @@
+/* BANNER ===============================*/
+div.banner {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/* HEADING ______________________________*/
+div.heading {
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 0 0 0 1rem;
+}
+
+div.heading h1 {
+  font-size: 3rem;
+  color: #45315d;
+  line-height: 3.25rem;
+}
+
+div.heading p {
+  width: 75%;
+  line-height: 1.5rem;
+}
+
+div.buttons {
+  transform: translateY(3rem);
+}
+
+div.buttons button {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+div.buttons > button.button_1 {
+  border: solid 2px #45315d !important;
+  border-radius: 0.25rem;
+  transition-duration: 0.3s;
+}
+
+div.buttons > button.button_1:hover {
+  background-color: #45315d;
+  color: #f2f4fb;
+  border: solid 2px #45315d !important;
+}
+
+div.buttons > button.button_2 {
+  border-radius: 0.25rem;
+  background-color: #45315d;
+  color: #f2f4fb;
+  border: solid 2px #45315d !important;
+  transition-duration: 0.3s;
+}
+
+div.buttons > button.button_2:hover {
+  background-color: #f2f4fb;
+  color: black;
+}
+
+
+/* IMAGE __________________________________*/
+div.banner > img {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 100%;
+  height: 88vh;
+}

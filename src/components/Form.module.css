@@ -1,0 +1,13 @@
+/* Form ==================================*/
+div.form_container {
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.form_container input {
+  width: 50%;
+  margin: 0 0 0 1.5rem;
+}

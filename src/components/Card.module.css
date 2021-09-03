@@ -1,0 +1,25 @@
+/* Card ============================*/
+div.card_container {
+  height: 60vh;
+  width: 20rem;
+  margin: 0 1rem;
+}
+
+/* Image ____________________________________*/
+div.card_container > div.card_img_container{
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  margin: 0 0 1rem 0;
+}
+
+/* Text _____________________________________*/
+i{
+  font-size: 1rem;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+i:hover{
+  font-size: 1.1rem;
+}
