@@ -6,7 +6,7 @@ import bannerImage from "../assets/landing.jpg";
 const Banner = () => {
   return (
     <div className={st.banner}>
-      <img src={bannerImage} alt="banner image" />
+      <img src={bannerImage} alt="banner" />
 
       {/*HEADING =============================================== */}
 
