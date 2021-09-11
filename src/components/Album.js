@@ -56,8 +56,10 @@ class Album extends Component {
       );
     } else {
       return (
-        <div className={"spinner-border m-auto"} role="status">
-          <span class="visually-hidden">Loading...</span>
+        <div className={"d-flex w-100 justify-content-center p-5"}>
+          <div className={"spinner-border"} role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
         </div>
       );
     }
@@ -106,7 +108,7 @@ class Album extends Component {
         </div>
 
         {/* _____BUTTONS __________________________________________________________________*/}
-            {this.loading()}
+        {this.loading()}
       </div>
     );
   }
