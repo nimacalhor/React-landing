@@ -18,14 +18,25 @@ ul.link_lists {
 
 ul.link_lists > li {
   margin: 0.2rem 0.5rem;
-  color: #f2f4fb;
   border-bottom: solid 2px #45315d;
   cursor: pointer;
   transition-duration: 0.4s;
 }
 
 ul.link_lists > li:hover {
-  /* color: #FF9280; */
+  border-bottom: solid 2px #ff9280;
+}
+
+ul.link_lists > li > a {
+  color: #f2f4fb;
+  text-decoration: none;
+}
+
+ul.link_lists > li > a.linkIsActive {
+  font-weight: 600;
+}
+
+ul.link_lists > li.activeLi {
   border-bottom: solid 2px #ff9280;
 }
 
